@@ -134,3 +134,21 @@ You'll need to now assign each wheel and make sure it is socketed to the body of
 
 ![image](https://github.com/user-attachments/assets/d00d0301-4e58-40d8-a95a-38c373539231)
 
+Now, with all that done, we need to create a static mesh for the body and wheels. Unfortunately they will all be bundled together if we do it in the Skeleton Asset.
+I like to open File Explorer and drag and drop the .fbx we exported from Blender into a different folder. Instead of choosing the Skeletal Mesh option, you can leave it as `None` or choose `Static Mesh`.
+*Make sure to import to a different folder than the one the Skeletal Mesh is in, otherwise it will just override it!*
+
+![image](https://github.com/user-attachments/assets/4b5b48c9-aded-4265-93b4-16a04d07f58c)
+
+I like to import all of it into a parent folder, and then `Advanced Copy` it to the child folder so that it overrides the references to the materials and textures nicely.
+The Skeletal Mesh and The Static Mesh are considered completely different objects by Unreal, so don't worry about those clashing.
+
+![image](https://github.com/user-attachments/assets/8b721741-99c7-438a-9450-cf2784efe045)
+
+![image](https://github.com/user-attachments/assets/363b13be-b426-4b06-9171-eeaf058fa76b)
+
+Now you should have the correct Static Mesh assets to finish off the Blueprint.
+Again, *make sure everything is socketed to the vehicle Body!*
+
+![image](https://github.com/user-attachments/assets/cfe8f4ea-7288-4f83-b689-baf7fb2e92f1)
+
