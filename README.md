@@ -71,3 +71,25 @@ These are the export options you'll want for the best results in Unreal Engine.
 
 ![image](https://github.com/user-attachments/assets/c53099ba-de1d-47ca-b7cb-a3983e15643f)
 
+Make sure you export into a folder in your Unreal Engine project's Content folder.
+
+-----------------------------------------------------------------------
+ ## Importing Into Unreal Engine
+
+Once you've exported an .fbx file from Blender into an Unreal Engine Content folder, the engine will detect that there has been a source change and ask you to import via a popup.
+Choose "Yes" here, and scroll down to find the option that says "Force All Mesh As Type" - by default, it will be set to "None" as Unreal can't find a skeleton/armature, so it'll assume you're importing a static mesh.
+This couldn't be further from the truth, we've technically set this up by parenting our body mesh to our wheels.
+Change this option to force Skeletal Mesh import.
+
+After it has imported, you'll see a Skeleton, Skeletal Mesh, and Physics Asset, along with any materials and textures you added in Blender.
+
+![image](https://github.com/user-attachments/assets/e8c75310-cb68-4c4d-b496-e71c5ad47e7d)
+
+
+The first thing to do is head to the physics asset, and the likelihood is that it will be all wrong and everything will be capsules.
+You'll need to manually edit the physics assets here, I'd recommend replacing the capsules on the wheels with spheres, and either a box or single convex hull for the body. Click "Generate" as required.
+
+![image](https://github.com/user-attachments/assets/36a40cf6-b543-4da2-930d-f72dec785a25)
+
+
+Be aware that particularly strange meshes may require some tinkering with boxes etc to get the right collision setup, and you can have multiple colliders on a single mesh as required, as Unreal fails to recognize what the mesh is.
