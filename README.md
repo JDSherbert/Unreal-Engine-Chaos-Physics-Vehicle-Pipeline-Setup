@@ -98,5 +98,19 @@ You'll need to manually edit the physics assets here, I'd recommend replacing th
 
 ![image](https://github.com/user-attachments/assets/36a40cf6-b543-4da2-930d-f72dec785a25)
 
-
 Be aware that particularly strange meshes may require some tinkering with boxes etc to get the right collision setup, and you can have multiple colliders on a single mesh as required, as Unreal fails to recognize what the mesh is.
+
+Next, we want to create an AnimBP for this skeleton. 
+
+![image](https://github.com/user-attachments/assets/b3d485dd-9588-4799-9ad8-9362e1357bfc)
+
+There's a special setup that comes for free by default in the Vehicle Template for the engine, so we'll grab that. Reparent this `AnimationInstance` class to a `VehicleAnimationInstance` class.
+
+![image](https://github.com/user-attachments/assets/a007e694-09fa-4a19-bb90-71b250cbff6d)
+
+This now gives us access to the Wheel Controller node for our Animation Blueprint. This will animate the wheels spinning and steering left/right.
+Your setup should look something like this:
+
+![image](https://github.com/user-attachments/assets/8fc06e01-22e0-4f8e-be1a-6602f999ab6d)
+
+
