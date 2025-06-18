@@ -126,3 +126,11 @@ Now, we want to select our skeletal mesh we imported so that we can get our phys
 
 ![image](https://github.com/user-attachments/assets/e1a8b84d-fb48-4e19-9e99-7fae7b17aef5)
 
+Now we want to head to the `Vehicle Movement Component`, and this is where the naming conventions you used in the Blender project are really important.
+You'll need to now assign each wheel and make sure it is socketed to the body of the car.
+*Don't get confused - the Body is the correct choice, as the other similar option is the container I used to define the Vehicle's root position.*
+
+![image](https://github.com/user-attachments/assets/a45c5758-b44c-4bed-8fea-0ee84d9cb85b)
+
+![image](https://github.com/user-attachments/assets/d00d0301-4e58-40d8-a95a-38c373539231)
+
