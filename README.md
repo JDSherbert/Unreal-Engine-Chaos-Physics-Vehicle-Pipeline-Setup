@@ -84,7 +84,7 @@ Choose "Import" here, and scroll down to find the option that says "Force All Me
 This couldn't be further from the truth, we've technically set this up by parenting our body mesh to our wheels.
 Change this option to force Skeletal Mesh import.
 
-
+![image](https://github.com/user-attachments/assets/5aceac73-1f1e-4b8c-bf3b-c2f0c6d9f72a)
 
 After it has imported, you'll see a Skeleton, Skeletal Mesh, and Physics Asset, along with any materials and textures you added in Blender in your Content folder.
 
