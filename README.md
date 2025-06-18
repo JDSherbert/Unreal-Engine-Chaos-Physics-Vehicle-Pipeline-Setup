@@ -85,8 +85,10 @@ After it has imported, you'll see a Skeleton, Skeletal Mesh, and Physics Asset, 
 
 ![image](https://github.com/user-attachments/assets/e8c75310-cb68-4c4d-b496-e71c5ad47e7d)
 
-
 The first thing to do is head to the physics asset, and the likelihood is that it will be all wrong and everything will be capsules.
+
+![image](https://github.com/user-attachments/assets/1577a20c-2d0c-4fd6-ab1c-bc65201fadd9)
+
 You'll need to manually edit the physics assets here, I'd recommend replacing the capsules on the wheels with spheres, and either a box or single convex hull for the body. Click "Generate" as required.
 
 ![image](https://github.com/user-attachments/assets/36a40cf6-b543-4da2-930d-f72dec785a25)
