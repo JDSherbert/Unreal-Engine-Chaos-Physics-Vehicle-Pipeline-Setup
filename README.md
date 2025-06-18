@@ -113,4 +113,16 @@ Your setup should look something like this:
 
 ![image](https://github.com/user-attachments/assets/8fc06e01-22e0-4f8e-be1a-6602f999ab6d)
 
+Now create a Blueprint and use the template's `Vehicle Pawn` class as the parent. We'll go into this template and make some changes to use our new vehicle.
+First off, we'll want to set it to use our new Animation Blueprint.
+
+![image](https://github.com/user-attachments/assets/5af185ef-f018-4b40-aa98-30c96d6df087)
+
+Now, we want to select our skeletal mesh we imported so that we can get our physics.
+
+![image](https://github.com/user-attachments/assets/e9408212-137f-456d-8c1d-f49b7c3f924a)
+
+*Just in case you run into some confusion, the Template actually hides the skeletal mesh from being rendered. It is actually there!*
+
+![image](https://github.com/user-attachments/assets/e1a8b84d-fb48-4e19-9e99-7fae7b17aef5)
 
