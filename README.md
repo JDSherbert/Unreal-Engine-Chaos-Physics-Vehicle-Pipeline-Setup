@@ -30,4 +30,34 @@ Some words about the project here-
 
 
 -----------------------------------------------------------------------
+ ## Using Blender
+
+To start with, make your vehicle mesh as you normally would, except the following rules must be followed:
+- +X is always forward (thanks, Unreal)
+  ![image](https://github.com/user-attachments/assets/1f57ed00-a30f-4a16-bfec-344cf6b03b8b)
+
+- The vehicle mesh body should be inside an empty container, with all position, scale and rotation applied and at 0. You can apply transforms with `Ctrl+A`.
+![image](https://github.com/user-attachments/assets/26fe3c90-d7b9-4c9c-a82d-edc6df888db1)
+
+- The wheels should be children of the body. If you accidentally modelled the wheels as part of the body, you can select one of the vertices on the wheels, and hit `Ctrl+L` to auto grab the related vertices, and press `P` to seperate the mesh.
+![image](https://github.com/user-attachments/assets/437df3c7-bd0d-4e37-bf13-c39dd283b7f9)
+
+
+- Make sure to name the mesh and mesh containers appropriately as these are going to be our only references when importing into unreal. Here is a good example of a good naming convention:
+![image](https://github.com/user-attachments/assets/09de1184-90b4-4c41-9eaa-6d5ce345774b)
+- Note that the wheels should *really* follow the naming convention of FR (Front Right), FL (Front Left), BR (Back Right), BL (Back Left) because it will be important for setting up offsets/sockets.
+
+- Make sure the wheels have the origins in the center of the wheel (the little yellow dot).
+![image](https://github.com/user-attachments/assets/e3cb4e94-84a4-49e2-885c-1982d594e789)
+- If the origin is not centered, you can select the wheel mesh, and hit `Shift+Ctrl+Alt+C` to set the origin to the center of mass (volume) which should work for most cases.
+![image](https://github.com/user-attachments/assets/59e1d74e-e25f-41db-9999-2eb6fcf86058)
+
+-----------------------------------------------------------------------
+ ## Exporting From Blender
+
+ Once you are happy with everything, head to the export (fbx) option.
+![image](https://github.com/user-attachments/assets/c3fa27a3-d768-41ba-b61f-4dcbdfcf9009)
+
+These are the export options you'll want for the best results in Unreal Engine.
+![image](https://github.com/user-attachments/assets/c53099ba-de1d-47ca-b7cb-a3983e15643f)
 
