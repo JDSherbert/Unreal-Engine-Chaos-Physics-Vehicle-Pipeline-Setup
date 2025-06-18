@@ -77,11 +77,16 @@ Make sure you export into a folder in your Unreal Engine project's Content folde
  ## Importing Into Unreal Engine
 
 Once you've exported an .fbx file from Blender into an Unreal Engine Content folder, the engine will detect that there has been a source change and ask you to import via a popup.
-Choose "Yes" here, and scroll down to find the option that says "Force All Mesh As Type" - by default, it will be set to "None" as Unreal can't find a skeleton/armature, so it'll assume you're importing a static mesh.
+
+![image](https://github.com/user-attachments/assets/8cd1b434-a0ae-4072-9933-4d39a788dfa3)
+
+Choose "Import" here, and scroll down to find the option that says "Force All Mesh As Type" - by default, it will be set to "None" as Unreal can't find a skeleton/armature, so it'll assume you're importing a static mesh.
 This couldn't be further from the truth, we've technically set this up by parenting our body mesh to our wheels.
 Change this option to force Skeletal Mesh import.
 
-After it has imported, you'll see a Skeleton, Skeletal Mesh, and Physics Asset, along with any materials and textures you added in Blender.
+
+
+After it has imported, you'll see a Skeleton, Skeletal Mesh, and Physics Asset, along with any materials and textures you added in Blender in your Content folder.
 
 ![image](https://github.com/user-attachments/assets/e8c75310-cb68-4c4d-b496-e71c5ad47e7d)
 
