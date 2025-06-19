@@ -147,6 +147,19 @@ The Skeletal Mesh and The Static Mesh are considered completely different object
 
 ![image](https://github.com/user-attachments/assets/363b13be-b426-4b06-9171-eeaf058fa76b)
 
+Now we need to open the Static Mesh assets so we can handle the collisions. Don't worry this is a lot easier than the Skeletal Mesh one.
+Firstly, use the drop down to show the simple collision meshes.
+
+![image](https://github.com/user-attachments/assets/8b9e0509-4d1a-47c2-bb67-7bba513ea335)
+
+Then select it and delete it.
+
+![image](https://github.com/user-attachments/assets/11213a9e-c308-45dc-a395-09252679fcab)
+
+Take a look at the complex collision mesh and make sure it is okay, and if so, you can save that. We'll also need to repeat this process for the wheels.
+
+![image](https://github.com/user-attachments/assets/65097b94-33af-4eb0-9154-56281b7bbae7)
+
 Now you should have the correct Static Mesh assets to finish off the Blueprint.
 Again, *make sure everything is socketed to the vehicle Body!*
 
