@@ -32,12 +32,12 @@ Some words about the project here-
 -----------------------------------------------------------------------
  ## Using Blender
 
-Firstly, we want to make sure the units Blender is using are correct for Unreal. If this isn't done correctly, you may encounter scaling issues later.
+FTo start with, make sure the units Blender is using are correct for Unreal. If this isn't done correctly, you may encounter scaling issues later.
 These are the correct settings for Blender's units.
 
 ![image](https://github.com/user-attachments/assets/7bebccfb-ff9e-4793-b8a3-4ac43c628dcb)
 
-To start with, make your vehicle mesh as you normally would, except the following rules must be followed:
+Now, make your vehicle mesh as you normally would, except the following rules must be followed:
 - +X is always forward (thanks, Unreal)
   
   ![image](https://github.com/user-attachments/assets/1f57ed00-a30f-4a16-bfec-344cf6b03b8b)
