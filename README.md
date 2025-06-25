@@ -26,7 +26,8 @@
 
 -----------------------------------------------------------------------
 ## Overview
-Some words about the project here-
+This is a short guide for how to setup vehicles quickly in Unreal using the Chaos Vehicle systems. 
+This guide covers how to setup the mesh in Blender, how to export from Blender, how to import into Unreal, and how to set up physics and rig the vehicle for gameplay.
 
 
 -----------------------------------------------------------------------
